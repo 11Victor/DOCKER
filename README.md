@@ -21,6 +21,7 @@
     - `docker rm ID_CONTAINER` --> remove o container com id em questão.
     - `docker container prune` --> remove todos os containers que estão parados.
     - `docker rmi NOME_DA_IMAGEM` --> remove a imagem passada como parâmetro.
+    - `docker rmi $(docker images -a -q)` --> remove todas imagens
 - Comandos relacionados à construção de Dockerfile
     - `docker build -f Dockerfile` --> cria uma imagem a partir de um Dockerfile.
     - `docker build -f Dockerfile -t NOME_USUARIO/NOME_IMAGEM` --> constrói e nomeia uma imagem não-oficial.
